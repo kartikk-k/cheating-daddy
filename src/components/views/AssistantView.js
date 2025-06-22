@@ -394,7 +394,7 @@ export class AssistantView extends LitElement {
 
                 ${this.responses.length > 0 ? html` <span class="response-counter">${responseCounter}</span> ` : ''}
 
-                <input type="text" id="textInput" placeholder="Type a message to the AI..." @keydown=${this.handleTextKeydown} />
+                <input autofocus type="text" id="textInput" placeholder="Type a message to the AI..." @keydown=${this.handleTextKeydown} />
 
                 <button class="nav-button" @click=${this.navigateToNextResponse} ?disabled=${this.currentResponseIndex >= this.responses.length - 1}>
                     <?xml version="1.0" encoding="UTF-8"?><svg
